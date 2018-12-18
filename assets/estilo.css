@@ -1,0 +1,38 @@
+body{
+  font-size: 14px
+}
+
+.bd-verde {
+  color: #00923e;
+  border-bottom: 3px solid #00923e !important;
+}
+
+.bg-verde {
+  background-color: #00923e;
+}
+
+.bg-azul {
+  background-color: #019e9c;
+}
+
+.bg-verde-azul {
+  background-color: #00926e;
+}
+
+.green-letter {
+  color: #00923e;
+}
+
+.image-carousel {
+  max-height: 411px;
+}
+
+.conteudo {
+  font-size: 10px;
+}
+
+.noticia {
+  border: 0px !important;
+  border-radius: 0px !important;
+  box-shadow: 0px !important;
+}

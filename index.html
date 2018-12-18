@@ -1,77 +1,475 @@
-<!doctype html>
-<html lang="pt">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link href="estilo.css" rel="stylesheet">
-</head>
-<body>
-  <div id="header">
-    <nav id="logo" class="navbar nabar-expand-sm text-center justify-content-center">
-      <h1>NaMidiaMS</h1>
-    </nav>
-    <nav id="menu" class="navbar navbar-expand-sm justify-content-around d-flex">
-      <ul class="navbar-nav">
-        <li class="nav-item text-light bg-verde-azul flex-fill">
-          <a class="nav-link" href="#">Pagina Inicial</a>
-        </li>
-        <li class="nav-item text-light bg-azul flex-fill ">
-          <a class="nav-link" href="#">Cultura</a>
-        </li>
-        <li class="nav-item text-light bg-verde flex-fill ">
-          <a class="nav-link" href="#">Esporte</a>
-        </li>
-        <li class="nav-item text-light bg-verde-azul flex-fill ">
-          <a class="nav-link" href="#">Politica</a>
-        </li>
-        <li class="nav-item text-light bg-azul flex-fill ">
-          <a class="nav-link" href="#">Economia</a>
-        </li>
-        <li class="nav-item text-light bg-verde flex-fill ">
-          <input id="searchbar"></input>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <!-- corpo -->
-  <div class="container">
-    <div id="carrosel">
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://getbootstrap.com/docs/4.1/examples/blog/ -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+
+    <title>Blog Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./assets/fonts.css" rel="stylesheet">
+    <link href="./assets/blog.css" rel="stylesheet">
+    <link href="./assets/estilo.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="">
+      <header class="container blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+
+          <div class="col-4 text-center">
+            <a class="blog-header-logo text-dark" href="#">NaMidiaMS</a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <a class="text-muted" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3">
+                <circle cx="10.5" cy="10.5" r="7.5"></circle>
+                <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </header>
+      <!-- Menu -->
+      <div class="fluid pb-2 align-items-center sticky-top">
+        <nav class="nav d-flex justify-content-center  bg-verde">
+          <a class="p-2 text-white" href="#">Mato Grosso do Sul</a>
+          <a class="p-2 text-white" href="#">Economia</a>
+          <a class="p-2 text-white" href="#">Politica</a>
+          <a class="p-2 text-white" href="#">Esporte</a>
+          <a class="p-2 text-white" href="#">Cultura</a>
+        </nav>
+      </div>
+      <!-- conteudo inicial -->
+      <div class="container mb-4">
+        <div class="row">
+          <div class="col-lg-8">
+            <!-- carrosel -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="img/959b24c6-a979-468c-afe7-846fcbd28873.jpg.640x360_q75_box-0,90,1732,1065_crop_detail.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/maxresdefault.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/dest_923.jpg" alt="Third slide">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+              </a>
+            </div>
+          </div>
+          <!-- Destaques -->
+          <div class="col-lg-4">
+            <div class="list-group list-group-flush">
+              <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1"><strong>Titulo da Noticia</strong></h5>
+                  <small class="text-muted">3 dias atrás</small>
+                </div>
+                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                <small>Donec id elit non mi porta.</small>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1"><strong>Titulo da Noticia</strong></h5>
+                  <small class="text-muted">3 dias atrás</small>
+                </div>
+                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                <small class="text-muted">Donec id elit non mi porta.</small>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1"><strong>Titulo da Noticia</strong></h5>
+                  <small class="text-muted">3 dias atrás</small>
+                </div>
+                <p class="mb-1">Donec id elit non mi poxrta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                <small class="text-muted">Donec id elit non mi porta.</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- conteudo inicial II-->
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-md-4">
+            <div class="card flex-md-row mb-4 h-md-250  noticia">
+              <div class="card-body d-flex flex-column align-items-start">
+                <strong class="d-inline-block mb-2 text-primary">Cultura</strong>
+                <h4 class="mb-0">
+                  <a class="text-dark" href="#">Titulo da Noticia</a>
+                </h4>
+                <div class="mb-1 text-muted">Nov 12</div>
+                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <a href="#">Continuar lendo</a>
+              </div>
+              <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" style="width: 200px; height: 250px;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_167c17489cd%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_167c17489cd%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2255.609375%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card flex-md-row mb-4 h-md-250  noticia">
+              <div class="card-body d-flex flex-column align-items-start">
+                <strong class="d-inline-block mb-2 text-primary">Economia</strong>
+                <h4 class="mb-0">
+                  <a class="text-dark" href="#">Titulo da Noticia</a>
+                </h4>
+                <div class="mb-1 text-muted">Nov 12</div>
+                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <a href="#">Continuar lendo</a>
+              </div>
+              <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" style="width: 200px; height: 250px;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_167c17489cd%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_167c17489cd%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2255.609375%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card flex-md-row mb-4  h-md-250  noticia">
+              <div class="card-body d-flex flex-column align-items-start">
+                <strong class="d-inline-block mb-2 text-success">Esporte</strong>
+                <h4 class="mb-0">
+                  <a class="text-dark" href="#">Titulo da Noticia</a>
+                </h4>
+                <div class="mb-1 text-muted">Nov 11</div>
+                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <a href="#">Continuar lendo</a>
+              </div>
+              <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_167c17489d1%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_167c17489d1%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2255.609375%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 200px; height: 250px;">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card flex-md-row mb-4  h-md-250  noticia">
+              <div class="card-body d-flex flex-column align-items-start">
+                <strong class="d-inline-block mb-2 text-primary">Politica</strong>
+                <h4 class="mb-0">
+                  <a class="text-dark" href="#">Titulo da Noticia</a>
+                </h4>
+                <div class="mb-1 text-muted">Nov 12</div>
+                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <a href="#">Continuar lendo</a>
+              </div>
+              <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" style="width: 200px; height: 250px;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_167c17489cd%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_167c17489cd%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2255.609375%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card flex-md-row mb-4  h-md-250  noticia">
+              <div class="card-body d-flex flex-column align-items-start">
+                <strong class="d-inline-block mb-2 text-primary">Mato Grosso do Sul</strong>
+                <h4 class="mb-0">
+                  <a class="text-dark" href="#">Titulo da Noticia</a>
+                </h4>
+                <div class="mb-1 text-muted">Nov 12</div>
+                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <a href="#">Continuar lendo</a>
+              </div>
+              <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" style="width: 200px; height: 250px;" src="img/G_noticia_27524.jpg" data-holder-rendered="true">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card flex-md-row mb-4  h-md-250  noticia">
+              <div class="card-body d-flex flex-column align-items-start">
+                <strong class="d-inline-block mb-2 text-success">Economia</strong>
+                <h4 class="mb-0">
+                  <a class="text-dark" href="#">Titulo da Noticia</a>
+                </h4>
+                <div class="mb-1 text-muted">Nov 11</div>
+                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <a href="#">Continuar lendo</a>
+              </div>
+              <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src="img/dest_923.jpg" data-holder-rendered="true" style="width: 200px; height: 250px;">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div id="destaques">
-      <div id="col-1"></div>
-      <div id="col-2"></div>
-    <div>
-    <div id="recente">
-    </div>
-  </div>
+
+    <!-- Categorias -->
+    <main role="main" class="container-fluid">
+
+      <div id="title" class="container">
+        <div class="row">
+          <div class="col-md-8 blog-main">
+            <h1 class="pb-3 mb-4 font-italic border-bottom bd-verde">
+              Mato Grosso do Sul
+            </h1>
+          </div><!-- /.blog-main -->
+          <aside class="col-md-4 blog-sidebar">
+            <div class="p-3 mb-3 ">
+              <h4 class="font-italic">Propaganda</h4>
+              
+            </div>
+          </aside><!-- /.propaganda -->
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card flex-md-row mb-4 noticia">
+              <div class="card-body d-flex flex-column align-items-start">
+                <h4 class="mb-0">
+                  <a class="text-dark" href="#">Titulo da Noticia</a>
+                </h4>
+                <div class="mb-1 text-muted">Nov 11</div>
+                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <a href="#">Continuar lendo</a>
+              </div>
+            </div>
+          </div>
   
-  <div class="container">
-    <div id="col-1"></div>
-    <div id="col-2"></div>
-    <div id="col-3"></div>
-  </div>
+          <div class="col-md-3">
+            <div class="card flex-md-row mb-4  noticia">
+              <div class="card-body d-flex flex-column align-items-start">
+                <h4 class="mb-0">
+                  <a class="text-dark" href="#">Titulo da Noticia</a>
+                </h4>
+                <div class="mb-1 text-muted">Nov 11</div>
+                <a href="#">Continuar lendo</a>
+              </div>
+            </div>
+          </div>
   
-  <div class="categoria">
-    <nav class="categoria-header categoria-titulo">
-    </nav>
-    <div class="container categoria-body">
-      <figure>
-        <img/>
-        <figcaption></figcaption>
-      </figure>
-    </div>
-    <div id="noticiaDeMediaImportancia">
-    </div>
-    <div id="noticiaDeBaixaImportancia">
-    </div>
-    <div class="categoria-footer">
-    </div>
-  </div>
+          <div class="col-md-3">
+            <div class="card flex-md-row mb-4  noticia">
+              <div class="card-body d-flex flex-column align-items-start">
+                <h4 class="mb-0">
+                  <a class="text-dark" href="#">Titulo da Noticia</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card flex-md-row mb-4  noticia">
+              <div class="card-body d-flex flex-column align-items-start">
+                <h4 class="mb-0">
+                  <a class="text-dark" href="#">Titulo da Noticia</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card flex-md-row mb-4  noticia">
+              <div class="card-body d-flex flex-column align-items-start">
+                <h4 class="mb-0">
+                  <a class="text-dark" href="#">Titulo da Noticia</a>
+                </h4>
+                <div class="mb-1 text-muted">Nov 11</div>
+                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <a href="#">Continuar lendo</a>
+              </div>
+            </div>
+          </div>
   
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
-</html>
+          <div class="col-md-3">
+            <div class="card flex-md-row mb-4  noticia">
+              <div class="card-body d-flex flex-column align-items-start">
+                <h4 class="mb-0">
+                  <a class="text-dark" href="#">Titulo da Noticia</a>
+                </h4>
+                <div class="mb-1 text-muted">Nov 11</div>
+                <a href="#">Continuar lendo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card flex-md-row mb-4  noticia">
+              <div class="card-body d-flex flex-column align-items-start">
+                <h4 class="mb-0">
+                  <a class="text-dark" href="#">Titulo da Noticia</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card flex-md-row mb-4  noticia">
+                <div class="card-body d-flex flex-column align-items-start">
+                  <h4 class="mb-0">
+                    <a class="text-dark" href="#">Titulo da Noticia</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          <div class="col-md-3">
+            <div class="card flex-md-row mb-4  noticia">
+              <div class="card-body d-flex flex-column align-items-start">
+                <h4 class="mb-0">
+                  <a class="text-dark" href="#">Titulo da Noticia</a>
+                </h4>
+                <div class="mb-1 text-muted">Nov 11</div>
+                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <a href="#">Continuar lendo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card flex-md-row mb-4  noticia">
+              <div class="card-body d-flex flex-column align-items-start">
+                <h4 class="mb-0">
+                  <a class="text-dark" href="#">Titulo da Noticia</a>
+                </h4>
+                <div class="mb-1 text-muted">Nov 11</div>
+                <a href="#">Continuar lendo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card flex-md-row mb-4  noticia">
+              <div class="card-body d-flex flex-column align-items-start">
+                <h4 class="mb-0">
+                  <a class="text-dark" href="#">Titulo da Noticia</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card flex-md-row mb-4  noticia">
+              <div class="card-body d-flex flex-column align-items-start">
+                <h4 class="mb-0">
+                  <a class="text-dark" href="#">Titulo da Noticia</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.row -->
+      </div>
+      
+
+      <div class="row">
+        <div class="col-md-8 blog-main">
+          <h3 class="pb-3 mb-4 font-italic border-bottom bd-azul">
+            Politica
+          </h3>
+        </div><!-- /.blog-main -->
+        <aside class="col-md-4 blog-sidebar">
+          <div class="p-3 mb-3 ">
+            <h4 class="font-italic">Propaganda</h4>
+            
+          </div>
+        </aside><!-- /.propaganda -->
+
+      </div><!-- /.row -->
+
+      <div class="row">
+        <div class="col-md-8 blog-main">
+          <h3 class="pb-3 mb-4 font-italic border-bottom bd-azul">
+            Economia
+          </h3>
+        </div><!-- /.blog-main -->
+        <aside class="col-md-4 blog-sidebar">
+          <div class="p-3 mb-3 ">
+            <h4 class="font-italic">Propaganda</h4>
+            
+          </div>
+        </aside><!-- /.propaganda -->
+
+      </div><!-- /.row -->
+
+      <div class="row">
+        <div class="col-md-8 blog-main">
+          <h3 class="pb-3 mb-4 font-italic border-bottom bd-azul">
+            Esporte
+          </h3>
+        </div><!-- /.blog-main -->
+        <aside class="col-md-4 blog-sidebar">
+          <div class="p-3 mb-3 ">
+            <h4 class="font-italic">Propaganda</h4>
+            
+          </div>
+        </aside><!-- /.propaganda -->
+      </div><!-- /.row -->
+      
+      <div class="row">
+        <div class="col-md-8 blog-main">
+          <h3 class="pb-3 mb-4 font-italic border-bottom bd-azul">
+            Cultura
+          </h3>
+        </div><!-- /.blog-main -->
+        <aside class="col-md-4 blog-sidebar">
+          <div class="p-3 mb-3 ">
+            <h4 class="font-italic">Propaganda</h4>
+            
+          </div>
+        </aside><!-- /.propaganda -->
+
+      </div><!-- /.row -->
+    </main><!-- /.container -->
+
+    <footer class="blog-footer bg-dark text-white clearfix">
+      <nav class="navbar ml-5 pl-5 float-left">
+        <ul class="navbar-nav align-items-start">
+          <li class="nav-item">
+            <h3>NaMidiaMS</h3>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mato Grosso do Sul</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Economia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Politica</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Esporte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cultura</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="navbar mr-5 pr-5 float-right">
+          <ul class="navbar-nav  align-items-end">
+            <li class="nav-item">
+              Desenvolvedores
+            </li>
+            <li class="nav-item">
+              Kevyan
+            </li>
+            <li class="nav-item">
+              Alan
+            </li>
+            <li class="nav-item">
+              Gabryele
+            </li>
+          </ul>
+        </nav>
+      <p>
+        <a href="#" class="text-white">Voltar ao topo</a>
+      </p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
+  
+
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="250" viewBox="0 0 200 250" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="13" style="font-weight:bold;font-size:13pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text></svg></body></html>
