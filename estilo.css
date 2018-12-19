@@ -1,5 +1,9 @@
 body{
-  font-size: 14px
+  font-size: 14px;
+}
+
+.nav-link{
+  padding: none !important;
 }
 
 .menu {
