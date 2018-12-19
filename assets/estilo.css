@@ -2,6 +2,10 @@ body{
   font-size: 14px
 }
 
+.menu {
+  font-size: 1.15em;
+}
+
 .bd-verde {
   color: #00923e;
   border-bottom: 3px solid #00923e !important;
