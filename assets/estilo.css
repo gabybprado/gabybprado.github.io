@@ -40,3 +40,31 @@ body{
   border-radius: 0px !important;
   box-shadow: 0px !important;
 }
+
+.avatar-img {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+
+.avatar-img--small{
+  width: 60px;
+  height: 60px;
+}
+
+.img-noticia{
+  width: 90%;
+}
+
+
+.logo{
+  color: black;
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: #00923e;
+  text-decoration: none;
+}
+
