@@ -85,7 +85,8 @@ body {
 }
 
 .c-link:hover{
-  color: black;
+  color: white;
+  background-color: #005f28;
 }
 
 .c-link-yellow{
