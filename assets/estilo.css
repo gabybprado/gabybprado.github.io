@@ -1,9 +1,9 @@
-body{
-  font-size: 14px
+body {
+  font-size: 14px;
 }
 
 .menu {
-  font-size: 1.15em;
+  font-size: 1.10rem;
 }
 
 .bd-verde {
@@ -29,10 +29,6 @@ body{
 
 .image-carousel {
   max-height: 411px;
-}
-
-.conteudo {
-  font-size: 10px;
 }
 
 .noticia {
@@ -77,4 +73,30 @@ body{
 
 .scale-active:hover{
   transform: scale(1.05);
+}
+
+.c-link, .c-link:hover, .c-link:active, .c-link:visited{
+  text-decoration: none;
+}
+
+.c-link {
+  color: white;
+
+}
+
+.c-link:hover{
+  color: black;
+}
+
+.c-link-yellow{
+  color: #ffc107;
+
+}
+
+.c-link-yellow:hover{
+  color: black;
+}
+
+.card-title {
+  text-transform: uppercase;
 }
