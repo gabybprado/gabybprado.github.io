@@ -72,19 +72,28 @@ body {
 }
 
 .scale-active:hover{
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .c-link, .c-link:hover, .c-link:active, .c-link:visited{
   text-decoration: none;
 }
 
-.c-link {
+.c-link-white {
   color: white;
 
 }
 
-.c-link:hover{
+.c-link-white:hover{
+  color: black;
+  
+}
+
+.menu-link {
+  color: white;
+}
+
+.menu-link:hover {
   color: white;
   background-color: #005f28;
 }
