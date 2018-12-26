@@ -94,7 +94,7 @@
               </div>
             </div><!-- ./ foto da noticia-->
             <!-- Noticia -->
-            <div class="text-justify">
+            <div class="text-justify texto-noticia">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie turpis libero, sit amet aliquam risus venenatis id. Donec nec mauris ac erat ultricies volutpat. Praesent eu imperdiet libero. Nunc sed orci quis nisi commodo sodales quis non lorem. Pellentesque maximus et dolor ac porta. Sed rutrum justo nec ultrices luctus. Praesent non turpis rhoncus, mollis quam at, sodales ligula. Quisque sit amet porttitor ligula, sit amet pulvinar turpis. Integer convallis facilisis blandit. Sed venenatis augue ac velit iaculis laoreet. Quisque tristique, lacus vitae pulvinar lacinia, nisl nunc faucibus nibh, et varius ex enim vitae tellus.</p>
   
               <p>Nam consequat molestie arcu, et cursus lectus hendrerit eget. Nullam cursus eros non ex ultricies, sed ullamcorper arcu elementum. Aenean non diam eu arcu euismod porttitor eu id massa. Vestibulum vel lacus elementum, bibendum justo sit amet, interdum est. Vestibulum quis ex rutrum, facilisis neque a, volutpat turpis. Aliquam erat volutpat. Donec finibus nulla ac mauris cursus venenatis. Aliquam vehicula quis erat quis volutpat. Proin leo odio, lacinia in turpis id, dignissim vehicula neque. Donec scelerisque tortor non felis gravida semper. Ut ex magna, hendrerit non felis sed, fermentum interdum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
@@ -116,14 +116,23 @@
             
         </div>
         <!-- Informação do autor -->
-        <div class="row">
+        <div class="row py-5">
           <div class="col-lg-2">
                   
           </div>
           <div class="col-lg-8">
-            <div id="autor" class="AutorDaNoticia">
-              <img src="https://www.w3schools.com/howto/img_avatar.png" class="d-inline-block rounded-circle avatar-img-small">
-              <p class="text-muted d-inline">Gabryele Prado </p>
+            <div id="autor" class="AutorDaNoticia row">
+              <div class="col-3">
+                <img src="https://www.w3schools.com/howto/img_avatar.png" class="d-inline-block rounded-circle w-100">
+              </div>
+              <div class="col-9">
+                <div class="texto-noticia">
+                  <h5><p class="text-muted ">Escrito por</p></h5>
+                  <h3><p class="d-inline">Gabryele Prado</p></h3>
+                  <p class="text-secondary">Designer, Programadora, etc, etc</p>
+                </div>
+              </div>
+              
             </div>
           </div>
           <div class="col-lg-2">
@@ -133,9 +142,9 @@
           
       </div><!-- ./ corpo noticia-->
     </main>
-        
+    
     <!-- outras noticias -->
-    <div class="container-fluid">
+    <div class="container">
       <div class="row mb-2">
         <div class="col-md-4 px-0">
           <div class="card flex-md-row mb-0 noticia">
@@ -243,49 +252,58 @@
     </div><!-- ./ outras noticias-->
   
     <!-- Footer -->
-    <footer class="blog-footer bg-verde text-white clearfix">
-      <nav class="navbar ml-5 pl-5 float-left">
-        <ul class="navbar-nav align-items-start">
-          <li class="nav-item text-warning">
-            <h3>NaMidiaMS</h3>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link text-white" href="#">Mato Grosso do Sul</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Economia</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link text-white" href="#">Politica</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-linkar.png" class="d-inline-block rounded-circle avatar-img-small">
-              <p class="text-muted d-inline">Gabryele Prado </p>text-white" href="#">Esporte</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link text-white" href="#">Cultura</a>
-          </li>
-        </ul>
-      </nav>
-      <nav class="navbar mr-5 pr-5 float-right">
-          <ul class="navbar-nav  align-items-end">
-            <li class="nav-item text-warning">
-              <strong>Desenvolvedores</strong>
-            </li>
-            <li class="nav-item">
-              Kevyan
-            </li>
-            <li class="nav-item">
-              Alan
-            </li>
-            <li class="nav-item">
-              Gabryele
-            </li>
-          </ul>
-        </nav>
-      <p>
-        <a href="#" class="text-warning">Voltar ao topo</a>
-      </p>
+    <footer class="blog-footer bg-verde-dark text-white clearfix">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <nav class="navbar ml-5 pl-5 float-left">
+              <ul class="navbar-nav align-items-start texto-noticia">
+                <li class="nav-item text-warning">
+                  <h3>NaMidiaMS</h3>
+                </li>
+                <li class="nav-item">
+                  <a class="text-white" href="#">Mato Grosso do Sul</a>
+                </li>
+                <li class="nav-item">
+                  <a class="text-white" href="#">Economia</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="text-white" href="#">Politica</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="text-white" href="#">Esporte</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="text-white" href="#">Cultura</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-4">
+            <p>
+              <a href="#" class="text-warning">Voltar ao topo</a>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <nav class="navbar mr-5 pr-5 float-right">
+              <ul class="navbar-nav  align-items-end">
+                <li class="nav-item text-warning">
+                  <strong>Desenvolvedores</strong>
+                </li>
+                <li class="nav-item">
+                  Kevyan
+                </li>
+                <li class="nav-item">
+                  Alan
+                </li>
+                <li class="nav-item">
+                  Gabryele
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
     </footer> <!-- ./ footer-->
 
     <!-- Bootstrap core JavaScript
