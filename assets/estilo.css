@@ -37,14 +37,7 @@ body {
   box-shadow: 0px !important;
 }
 
-.avatar-img {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
-}
-
-.avatar-img--small{
+.avatar-img-small{
   width: 60px;
   height: 60px;
 }
